@@ -1,7 +1,11 @@
 console.clear();
 import express from 'express';
+import dotenv from 'dotenv';
+import accountRounter from './routers/account.js';
+import authRouter from './routers/auth.js';
+dotenv.config(); // se puede definir otra ruta dentro 
 
-const PORT = 3000;
+const PORT = process.env.PORT; //3000
 
 const expressApp = express()
 
@@ -9,6 +13,8 @@ const expressApp = express()
 //-------------Middlewares-------------------// 
 expressApp.use(express.json())   //Parsea las solicitudes a json (lo que venga a json)
 expressApp.use(express.text()) //Convierte lo que venga a texto 
+expressApp.use("/account",accountRounter);
+expressApp.use("/auth", authRouter);
 ///---------------------------------------------------------------
 
 
@@ -32,13 +38,6 @@ expressApp.use(express.text()) //Convierte lo que venga a texto
 // });
 
 
-//obtener
-
-//crear
-
-//actualizar
-
-//eliminar
 
 
 expressApp.listen(PORT,()=>
