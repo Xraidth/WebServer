@@ -1,4 +1,4 @@
-import  {Router}  from "express";
+/*import  {Router}  from "express";
 import {USERS_BBDD} from '../users.js'
 const authRouter = Router();
 
@@ -47,4 +47,4 @@ authRouter.post("autorizado", (req,res)=>{
 
 
 
-export default authRouter;
+export default authRouter;*/

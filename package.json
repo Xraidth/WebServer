@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon ./WebServer.js"
+    "dev": "nodemon ./src/WebServer.js",
+    "start": "node ./src/WebServer.js"
   },
   "keywords": [],
   "author": "",
@@ -13,7 +14,8 @@
   "dependencies": {
     "dotenv": "^16.3.2",
     "express": "4.18.2",
-    "jsonwebtoken": "^9.0.2"
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "8.1.0"
   },
   "devDependencies": {
     "nodemon": "3.0.3"
