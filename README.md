@@ -24,10 +24,20 @@
 
 <p>Create a copy of the .env.example file and name it .env</p>
 <code>cp .env.example .env</code>
-<p>Don't forget to update the values of the environment variables according to your configuration.</p>
+
 
 <h3>Environment Variables</h3>
 <p>Ensure that the .env file contains the necessary environment variables.</p>
+
+<h3>DataBase</h3>
+<p>
+    Visit https://www.mongodb.com/ to create your database. 
+    For more information, you can explore the details at:
+    https://mongoosejs.com/
+</p>
+<p>Don't forget to update the values of the environment variables according to your configuration.</p>
+
+
 
 <h3>API Endpoints</h3>
 <h4>User Registration</h4>
