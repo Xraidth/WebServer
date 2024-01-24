@@ -25,7 +25,7 @@
 <p>Create a copy of the .env.example file and name it .env. Update the values of the environment variables according to your configuration.</p>
 <code>cp .env.example .env</code>
 
-<h3>Environment Variables</h3>
+<h3>Environment Variables</h3><br>
 <p>Ensure that the .env file contains the necessary environment variables.</p>
 
 <h3>API Endpoints</h3>
