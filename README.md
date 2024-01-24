@@ -22,8 +22,9 @@
 <p>Install dependencies using npm:</p>
 <code>npm install</code>
 
-<p>Create a copy of the .env.example file and name it .env: Update the values of the environment variables according to your configuration.</p>
+<p>Create a copy of the .env.example file and name it .env</p>
 <code>cp .env.example .env</code>
+<p>Don't forget to update the values of the environment variables according to your configuration.</p>
 
 <h3>Environment Variables</h3>
 <p>Ensure that the .env file contains the necessary environment variables.</p>
