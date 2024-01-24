@@ -38,43 +38,43 @@
 
 <h4>User Login</h4>
 <p>
-    Endpoint: POST /login
-    Request DTO: user-login.dto.js
+    Endpoint: POST /login<br>
+    Request DTO: user-login.dto.js<br>
     Controller: user-login.controller.js
 </p>
 
 <h4>User Profile</h4>
 <p>
-    Endpoint: GET /profile
-    Request DTO: user-jwt.dto.js
+    Endpoint: GET /profile<br>
+    Request DTO: user-jwt.dto.js<br>
     Controller: user-profile.controller.js
 </p>
 
 <h4>Update User Data</h4>
 <p>
-    Endpoint: PATCH /update-data
-    Request DTOs: user-jwt.dto.js, user-update-data.dto.js
+    Endpoint: PATCH /update-data<br>
+    Request DTOs: user-jwt.dto.js, user-update-data.dto.js<br>
     Controller: user-update-data.controller.js
 </p>
 
 <h4>Update User Email</h4>
 <p>
-    Endpoint: PATCH /update-email
-    Request DTOs: user-jwt.dto.js, user-update-email.dto.js
+    Endpoint: PATCH /update-email<br>
+    Request DTOs: user-jwt.dto.js, user-update-email.dto.js<br>
     Controller: user-update-email.controller.js
 </p>
 
 <h4>Update User Password</h4>
 <p>
-    Endpoint: PATCH /update-password
-    Request DTOs: user-jwt.dto.js, user-update-password.dto.js
+    Endpoint: PATCH /update-password<br>
+    Request DTOs: user-jwt.dto.js, user-update-password.dto.js<br>
     Controller: user-update-password.controller.js
 </p>
 
 <h4>Unregister User</h4>
 <p>
-    Endpoint: DELETE /unregister
-    Request DTOs: user-jwt.dto.js, user-unregister.dto.js
+    Endpoint: DELETE /unregister<br>
+    Request DTOs: user-jwt.dto.js, user-unregister.dto.js<br>
     Controller: user-unregister.controller.js
 </p>
 
