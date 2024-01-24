@@ -7,5 +7,5 @@ surname:{type:String, require:true, minLength:4, maxLength:50},
 email:{type:String, require:true, unique:true},
 password:{type:String, require:true}    //No se guarda en texto plano, se guarda en hash
 });
-const userModel = model('User', userSchema);
-export default userModel;
+const UserModel = model('User', userSchema);
+export default UserModel;
