@@ -1,4 +1,4 @@
-//falta controlar que el mail exista en la base y que me pasen el id como parametro y validarlo 
+ 
 
 import { createBlog } from "../data/blog/dataBlog.js";
 const blogPublishController = (req, res)=>{
