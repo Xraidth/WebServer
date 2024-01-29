@@ -1,5 +1,12 @@
 import {createServer} from 'http';
-import expressApp from './express.js';
+import {
+expressApp, 
+blogexpressApp
+} from './express.js';
 
 const httpServer = createServer(expressApp);
-export default httpServer;
+const httpBlogServer = createServer(blogexpressApp);
+export{
+    httpServer,
+    httpBlogServer
+};

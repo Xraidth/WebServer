@@ -50,15 +50,25 @@
 ///---------------------------------------------------------------------------------------------
 console.clear();
 import './config/env.js'
-import connectDB from './config/db.js';
-import httpServer from "./config/http.js";
+import connectMongoDB from './config/Mongodb.js';
+import 
+{
+httpServer,
+httpBlogServer
+} from "./config/http.js";
 
 const bootstrap = async ()=>{
 
-await connectDB(process.env.MONGODB_URL);
+await connectMongoDB(process.env.MONGODB_URL);
 
-httpServer.listen(process.env.PORT,()=>{
-console.log(`Servidor escuchando en el puerto ${process.env.PORT}`);
+const custom_port = Number(process.env.PORT);
+
+httpServer.listen(custom_port,()=>{
+console.log(`User Server is listening on port: ${custom_port}`);
+});
+
+httpBlogServer.listen(custom_port+1,()=>{
+console.log(`Blog Server is listening on port: ${custom_port+1}`);
 });
 
 };
