@@ -6,14 +6,14 @@ import UserModel from "../schemas/user.schema.js";
  const {id} = req;
 
  const existingUserById = await UserModel.findById(id).exec();
- if(!existingUserById) return res.status(401).send('Usuario no autorizado');
+ if(!existingUserById) return res.status(401).send('User not autorized');
 
 const {email} = existingUserById;
 
 try{
     getProfileBlogs(email).then(results=>{
         
-        res.status(200).send("blog created");
+        res.status(200).send(results);
         })
     .catch(error=>{console.log(error);});
 }

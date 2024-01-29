@@ -5,7 +5,9 @@ use blogs;
 create table if not exists articles (
 id_art int auto_increment primary key not null,
 title varchar(70) not null,
+introduction varchar(750) default null,
 body varchar(1500) not null,
+conclusion varchar(1500) default null,
 art_date date not null DEFAULT (CURRENT_DATE),
 email varchar(50) not null
 );
