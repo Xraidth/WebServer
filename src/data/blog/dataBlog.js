@@ -31,12 +31,12 @@ export const getAllBlogs = () => {
     });
 };
 
-export const getOneBlogs = (id) => {
+export const getOneBlogs = (id_art) => {
     return new Promise((resolve, reject) => {
         try {
             
 
-            mycon.query('SELECT * FROM articles WHERE id = ? ',[id], function (error, results) {
+            mycon.query('SELECT * FROM articles WHERE id_art = ? ',[id_art], function (error, results) {
                 if (error) {
                     console.log("Error in getOne query", error);
                     reject(error);
@@ -53,12 +53,12 @@ export const getOneBlogs = (id) => {
     });
 };
 
-export const createBlog = (title, body, email) => {
+export const createBlog = (title, introduction, body, conclusion, email) => {
     return new Promise((resolve, reject) => {
         try {
-            mycon.connect();
+            
 
-            mycon.query('INSERT INTO articles (`title`, `body`, `email`) VALUES (?, ?, ?); ',[title, body, email], function (error, results) {
+            mycon.query('INSERT INTO articles (title, introduction, body, conclusion, email) VALUES (?, ?, ?, ?, ?); ',[title, introduction, body, conclusion, email], function (error, results) {
                 if (error) {
                     console.log("Error in getOne query", error);
                     reject(error);
@@ -70,17 +70,17 @@ export const createBlog = (title, body, email) => {
             console.log('Error in getOneBlogs', error);
             reject(error);
         } finally {
-            mycon.end();
+            
         }
     });
 };
 
-export const updateBlog = (id, title, body, email) => {
+export const updateBlog = (id_art, title, introduction, body, conclusion, email) => {
         return new Promise((resolve, reject) => {
             try {
                 
     
-                mycon.query('UPDATE articles SET `title` ?, `body` = ?, `email` = ? WHERE `id_art` = ? ;',[title, body, email, id], function (error, results) {
+                mycon.query('UPDATE articles SET title = ? , introduction = ?, body = ?, conclusion = ?, email = ? WHERE id_art = ? ;',[title, introduction, body, conclusion, email, id_art], function (error, results) {
                     if (error) {
                         console.log("Error in getOne query", error);
                         reject(error);
