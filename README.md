@@ -5,7 +5,7 @@
 <h2>WebServer README</h2>
 <h3>Project Overview</h3>
 <p>
-This project are several separtes Node.js server. It utilizes the Express.js framework to handle HTTP requests and responses. The server follows a modular structure, separating concerns by organizing code into controllers and DTOs (Data Transfer Objects) through a set of API endpoints.  
+This project consists of several separate Node.js servers. It uses the Express.js framework to handle HTTP requests and responses. The server follows a modular structure, separating concerns by organizing code into controllers and DTOs (Data Transfer Objects) through a set of API endpoints.  
 </p>
 <h4>It provides:</h4>
 <ul>
