@@ -5,12 +5,14 @@
 <h2>WebServer README</h2>
 <h3>Project Overview</h3>
 <p>
-    This project is a Node.js server that provides user
-    authentication and profile management functionality through a set
-    of API endpoints. It utilizes the Express.js framework to handle
-    HTTP requests and responses. The server follows a modular structure,
-    separating concerns by organizing code into controllers and DTOs (Data Transfer Objects).
+This project are several separtes Node.js server. It utilizes the Express.js framework to handle HTTP requests and responses. The server follows a modular structure, separating concerns by organizing code into controllers and DTOs (Data Transfer Objects) through a set of API endpoints.  
 </p>
+<h4>It provides:</h4>
+<ul>
+  <li>User authentication and profile management functionality</li>
+  <li>Blog management</li>
+</ul>
+
 
 <h3>Installation</h3>
 <h4>To get started with this project, follow these steps:</h4>
@@ -29,13 +31,16 @@
 <h3>Environment Variables</h3>
 <p>Ensure that the .env file contains the necessary environment variables.</p>
 
-<h3>DataBase</h3>
+<h3>DataBases</h3>
 <p>
+    I utilized two databases for this project. One is developed MySQL and the other in Mondo DB.
     Visit https://www.mongodb.com/ to create your database. 
     For more information, you can explore the details at:
     https://mongoosejs.com/
+    
 </p>
-<p>Don't forget to update the values of the environment variables according to your configuration.</p>
+<p>Important: Don't forget to update the values of the environment variables according to your configuration. In addition. You can find an example of this in the file called <b>.env.example</b> 
+and in a script in the Script folder you can find the reference to the database developed in mysql <b>Scrips/DataBaseSQLBlogs.sql</b> </p>
 
 
 
