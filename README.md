@@ -94,6 +94,46 @@ and in a script in the Script folder you can find the reference to the database 
     Controller: user-unregister.controller.js
 </p>
 
+<h4>Blog Management Endpoints</h4>
+<p>
+Get All Blogs
+Endpoint: GET /getAll
+Controller: blogGetAllController
+</p>
+
+<h4>Publish Blog</h4>
+<p>
+Endpoint: POST /publish
+Request DTO: userJWTDTO
+Controller: blogPublishController
+Note: Ensure the email exists in the database and pass the user ID as a parameter, validate it (similar to the profile endpoint).
+</p>
+
+<h4>Blog Profile</h4>
+<p>
+Endpoint: GET /profile
+Controller: blogProfileController
+</p>
+
+<h4>Get One Blog</h4>
+<p>
+Endpoint: GET /getOne
+Controller: blogGetOneController
+</p>
+
+<h4>Update Blog</h4>
+<p>
+Endpoint: PATCH /update
+Request DTO: userJWTDTO
+Controller: blogUpdateController
+</p>
+
+<h4>Delete One Blog</h4>
+<p>
+Endpoint: DELETE /deleteOne
+Controller: blogDeleteController
+</p>
+
 <h3>Usage</h3>
 <p>Start the server:</p>
 <code>npm start</code>
